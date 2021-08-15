@@ -466,6 +466,10 @@ body.ie ._ibg img {
   background: #252525;
 }
 
+.swiper-pagination-bullet {
+  line-height: 26px;
+}
+
 .spollers-block {
   margin: 0px 0px 50px 0px;
   max-width: 450px;
@@ -1003,6 +1007,7 @@ body.ie ._ibg img {
   text-decoration: line-through;
   -webkit-text-decoration-color: green;
           text-decoration-color: green;
+  text-decoration-thickness: 3px;
 }
 
 .button-filter {
@@ -1053,6 +1058,7 @@ body.ie ._ibg img {
   text-decoration: line-through;
   -webkit-text-decoration-color: green;
           text-decoration-color: green;
+  text-decoration-thickness: 3px;
 }
 
 .card-gallery__image:hover ~ .card-gallery__footer > .card-gallery__more {
@@ -1115,6 +1121,7 @@ body.ie ._ibg img {
   text-decoration: line-through;
   -webkit-text-decoration-color: green;
           text-decoration-color: green;
+  text-decoration-thickness: 3px;
   text-transform: uppercase;
   text-align: left;
   visibility: hidden;
