@@ -2047,11 +2047,6 @@ _active - открытый аккордеон
     top: 35%;
   }
 
-  .grid-weare {
-    -ms-grid-columns: (1fr)[9];
-    grid-template-columns: repeat(9, 1fr);
-  }
-
   .grid-weare__description--left {
     grid-column: 2 / -1;
   }
@@ -2118,6 +2113,13 @@ _active - открытый аккордеон
     -webkit-transform: translate(50%, 0);
         -ms-transform: translate(50%, 0);
             transform: translate(50%, 0);
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .grid-weare {
+    -ms-grid-columns: (1fr)[9];
+    grid-template-columns: repeat(9, 1fr);
   }
 }
 
@@ -2195,11 +2197,6 @@ _active - открытый аккордеон
     bottom: calc(50% - 1px);
   }
 
-  .grid-weare {
-    -ms-grid-columns: (1fr)[6];
-    grid-template-columns: repeat(6, 1fr);
-  }
-
   .grid-weare__title {
     grid-column: 2 / -2;
   }
@@ -2259,6 +2256,13 @@ _active - открытый аккордеон
 
   .menu__link::before {
     display: none;
+  }
+}
+
+@media screen and (max-width: 479.98px) {
+  .grid-weare {
+    -ms-grid-columns: (1fr)[6];
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 
