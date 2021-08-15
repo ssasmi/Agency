@@ -7,7 +7,7 @@
   font-display: swap;
   src: url("../fonts/Oswald-Bold.woff") format("woff"), url("../fonts/Oswald-Bold.woff2") format("woff2");
   font-weight: 700;
-  font-style: bold;
+  font-style: normal;
 }
 
 @font-face {
@@ -15,7 +15,7 @@
   font-display: swap;
   src: url("../fonts/Oswald-Light.woff") format("woff"), url("../fonts/Oswald-Light.woff2") format("woff2");
   font-weight: 200;
-  font-style: light;
+  font-style: normal;
 }
 
 @font-face {
@@ -31,7 +31,7 @@
   font-display: swap;
   src: url("../fonts/Oswald-Medium.woff") format("woff"), url("../fonts/Oswald-Medium.woff2") format("woff2");
   font-weight: 500;
-  font-style: medium;
+  font-style: normal;
 }
 
 @font-face {
@@ -39,7 +39,7 @@
   font-display: swap;
   src: url("../fonts/Oswald-SemiBold.woff") format("woff"), url("../fonts/Oswald-SemiBold.woff2") format("woff2");
   font-weight: 600;
-  font-style: semibold;
+  font-style: normal;
 }
 
 html {
@@ -699,8 +699,9 @@ body.ie ._ibg img {
   display: grid;
   position: relative;
   -ms-grid-rows: 2fr 3fr 3fr 3fr 2fr;
+  grid-template-rows: 2fr 3fr 3fr 3fr 2fr;
   -ms-grid-columns: (1fr)[11];
-      grid-template: 2fr 3fr 3fr 3fr 2fr/repeat(11, 1fr);
+  grid-template-columns: repeat(11, 1fr);
 }
 
 .grid-weare__title {
@@ -725,7 +726,7 @@ body.ie ._ibg img {
   font-size: 42px;
   font-weight: 200;
   letter-spacing: 2.69px;
-  line-height: 57, 2px;
+  line-height: 1.5;
 }
 
 .grid-weare__description {
@@ -2043,9 +2044,8 @@ _active - открытый аккордеон
   }
 
   .grid-weare {
-    -ms-grid-rows: 2fr 3fr 3fr 3fr 2fr;
     -ms-grid-columns: (1fr)[9];
-        grid-template: 2fr 3fr 3fr 3fr 2fr/repeat(9, 1fr);
+    grid-template-columns: repeat(9, 1fr);
   }
 
   .grid-weare__description--left {
@@ -2192,9 +2192,8 @@ _active - открытый аккордеон
   }
 
   .grid-weare {
-    -ms-grid-rows: 2fr 3fr 3fr 3fr 2fr;
     -ms-grid-columns: (1fr)[6];
-        grid-template: 2fr 3fr 3fr 3fr 2fr/repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
 
   .grid-weare__title {
