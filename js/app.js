@@ -783,13 +783,14 @@ if (sliderScrollItems.length > 0) {
 
 function sliders_bild_callback(params) { }
 
-if (document.querySelector('.slider-header__body')) {
-	let slider_about = new Swiper('.slider-header__body', {
+if (document.querySelector('.slider-header')) {
+	let slider_about = new Swiper('.slider-header', {
 		effect: 'fade',
 		autoplay: {
 			delay: 5000,
 			disableOnInteraction: false,
 		},
+		grabCursor: true,
 		observer: true,
 		observeParents: true,
 		slidesPerView: 1,
@@ -818,20 +819,22 @@ if (document.querySelector('.slider-header__body')) {
 
 if (document.querySelector('.team-swiper')) {
 	let slider_team = new Swiper('.team-swiper', {
-		autoHeight: true,
-		calculateHeight:true,
-		spaceBetween: 0,
+		slidesPerView: 'auto',
+		spaceBetween: 28,
+		initialSlide: 0,
+		centeredSlides: true,
 		//количество пролистываемых слайдов
 		slidesPerGroup: 1,
 		initialSlide: 0,
+		speed: 800,
+		loop: true,
 		grabCursor: true,
-		zoom: true,
 		breakpoints: {
 			540: {
-				slidesPerView: 2,
+				slidesPerView: 1,
 			},
 			740: {
-				slidesPerView: 3,
+				slidesPerView: 2,
 			},
 			1040: {
 				slidesPerView: 3,
@@ -844,9 +847,10 @@ if (document.querySelector('.team-swiper')) {
 if (document.querySelector('.slider-quotes')) {
 	let slider_quotes = new Swiper('.slider-quotes', {
 		//автовысота
-		autoHeight: true,
+		//autoHeight: true,
 		//количество слайдов для показа (целые числа или доли, либо 'auto')
 		slidesPerView: 1,
+		centeredSlides: true,
 		//количество пролистываемых слайдов
 		slidesPerGroup: 1,
 		//стартовый слайд (первый: 0)
